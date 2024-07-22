@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import "./styles/shared/buttons.css";
+import "./styles/shared/badges.css";
+import "./styles/game_details.css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faInfo, faUserAstronaut } from "@fortawesome/free-solid-svg-icons";
+
+import Header from "./components/Header";
+import Logo from "./components/Logo";
+// import SearchBar from "./components/SearchBar";
+import Button from "./components/Button";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header>
+        <Logo />
+        {/* <SearchBar /> */}
+        <div className="buttonWrapper">
+          <Button
+            text={<FontAwesomeIcon icon={faInfo} />}
+            className="btn_icon btn_icon--info"
+          />
+          <Button
+            text={<FontAwesomeIcon icon={faUserAstronaut} />}
+            className="btn_icon btn_icon--author"
+          />
+        </div>
+      </Header>
     </div>
   );
 }

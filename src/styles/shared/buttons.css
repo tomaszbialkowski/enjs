@@ -1,0 +1,138 @@
+.btn_icon {
+  width: var(--space_xl);
+  height: var(--space_xl);
+  border-radius: 50px;
+  border: none;
+  background-color: var(--gray-100);
+  color: var(--gray-300);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.1s;
+}
+
+.btn_icon--listHandlers,
+.btn_icon--back {
+  border: 2px solid var(--gray-300);
+  background-color: #fff;
+  font-size: 16px;
+}
+
+.btn_icon--listHandlers:hover,
+.btn_icon--back:hover,
+.btn_icon--delete:hover,
+.btn_icon.votes:hover,
+.btn_icon--add:hover {
+  box-shadow: 0px 0px 12px 1px rgba(51, 46, 50, 0.1);
+  transform: scale(1.1);
+}
+
+.btn_icon--listHandlers:active,
+.btn_icon--back:active,
+.btn_icon--delete:active,
+.btn_icon.votes:active,
+.btn_icon--add:hover {
+  transform: scale(1);
+  box-shadow: 0px 0px 8px 1px rgba(51, 46, 50, 0.1);
+}
+
+.btn_icon--delete {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  padding: 0;
+  top: 20px;
+  right: 20px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.btn_icon--listHandlers.fav {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.btn_icon--listHandlers.played {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+
+.btn_icon--listHandlers.finished {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.btn_icon--info,
+.btn_icon--author {
+  width: var(--space_xxl);
+  height: var(--space_xxl);
+  font-size: 1.1rem;
+  margin-left: var(--space_xs);
+}
+
+.btn_icon--info:hover,
+.btn_icon--author:hover {
+  color: var(--blue);
+  font-size: 1.3rem;
+}
+
+.btn_icon.votes {
+  width: 58px;
+  height: 58px;
+  border-radius: 32px;
+  font-size: 1.4rem;
+  flex-direction: column;
+  gap: 2px;
+  background-color: #fff;
+}
+
+.votes span {
+  color: var(--gray-700);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.votes.up {
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.votes.down {
+  color: var(--red);
+  border: 1px solid var(--red);
+}
+
+.buttonWrapper.votes {
+  justify-content: center;
+  margin-top: -36px;
+  position: relative;
+  z-index: 10;
+}
+
+.game_score span {
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+.btn_icon--add {
+  height: 84px;
+  width: 84px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  position: absolute;
+
+  background-color: #fff;
+  color: var(--gray-400);
+  border-radius: 50px;
+  border: 1px solid var(--gray-300);
+
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -3px;
+}
