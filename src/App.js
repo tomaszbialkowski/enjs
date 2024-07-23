@@ -11,13 +11,14 @@ import Logo from "./components/Logo";
 // import SearchBar from "./components/SearchBar";
 import Button from "./components/Button";
 import Footer from './components/Footer';
+import SearchBar from './components/SearchBar';
 
 function App() {
   return (
     <div className="App">
       <Header>
         <Logo />
-        {/* <SearchBar /> */}
+        <SearchBar />
         <div className="buttonWrapper">
           <Button
             text={<FontAwesomeIcon icon={faInfo} />}
