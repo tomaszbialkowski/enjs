@@ -10,6 +10,7 @@ import Header from "./components/Header";
 import Logo from "./components/Logo";
 // import SearchBar from "./components/SearchBar";
 import Button from "./components/Button";
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -28,6 +29,14 @@ function App() {
           />
         </div>
       </Header>
+      {/* <div className="container__main">
+        <Lists path={location.pathname} />
+        <main className="container__main--gameslist">
+          {modalInfo.show && <ModalInfo text={modalInfo.text} />}
+          <RouterConfig />
+        </main>
+      </div> */}
+      <Footer />
     </div>
   );
 }
