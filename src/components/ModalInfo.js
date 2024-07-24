@@ -12,7 +12,7 @@ export default function Info({ text }) {
     }, 2250);
 
     return () => clearTimeout(modalTimer);
-  }, [dispatch]);
+  });
 
   return (
     <div className={`modal ${modalType.toLowerCase()}`}>

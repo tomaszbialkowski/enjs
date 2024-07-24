@@ -35,7 +35,7 @@ export default function Game({ id }) {
     if (result < 0 && !isLame) {
       addToLameList();
     }
-  }, [isHot, isLame, result, addToHotList, addToLameList]);
+  });
 
   function handleDownVotes() {
     dispatch({
