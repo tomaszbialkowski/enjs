@@ -4,7 +4,7 @@ import "./styles/shared/badges.css";
 import "./styles/game_details.css";
 
 // import RouterConfig from "./router/RouterConfig";
-// import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInfo, faUserAstronaut } from "@fortawesome/free-solid-svg-icons";
@@ -17,7 +17,7 @@ import Lists from "./components/Lists";
 import Footer from "./components/Footer";
 
 function App() {
-  // const modalInfo = useSelector((state) => state.info);
+  const modalInfo = useSelector((state) => state.info);
   const location = useLocation();
 
   return (
