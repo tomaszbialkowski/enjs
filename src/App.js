@@ -40,7 +40,7 @@ function App() {
       <div className="container__main">
         <Lists path={location.pathname} />
         <main className="container__main--gameslist">
-          {modalInfo.show && <ModalInfo text={modalInfo.text} />}
+          {/* {modalInfo.show && <ModalInfo text={modalInfo.text} />} */}
           <RouterConfig />
         </main>
       </div>
