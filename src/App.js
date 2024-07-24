@@ -3,7 +3,7 @@ import "./styles/shared/buttons.css";
 import "./styles/shared/badges.css";
 import "./styles/game_details.css";
 
-import RouterConfig from "./router/RouterConfig";
+// import RouterConfig from "./router/RouterConfig";
 // import { useSelector } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
