@@ -1,72 +1,71 @@
-# ENJOYSTICK
+---
 
-# Getting Started with Create React App
+## Aby uruchomić projekt:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. W folderze projektu utwórz plik .env
 
-## Available Scripts
+2. Pobierz darmowy klucz API ze srony https://www.omdbapi.com/apikey.aspx
 
-In the project directory, you can run:
+3. w pliku `.env` do zmiennej `REACT_APP_OMDB_API_KEY` przypisz swój klucz
+   (w głównym folderze znajdziesz plik .env.template ze wzorem jak dokładnie powinno to wyglądać),
+
+4. w folderze projektu wykonaj polecenie
+
+### `npm install`
+
+5.  w folderze projektu wykonaj polecenie:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## O Projekcie
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Enjoystick to Twoja kolekcja gier, które są dla Ciebie ważne.
 
-### `npm test`
+### Co możesz:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- wyszukiwać gry z bazy OMDB,
+- dodawać do swojej kolekcji,
+- oceniać gry za pomocą przycisków "likes" i "downs" (aktualny rezultat ocen jest na bieżąco aktualizowany i wyświetlany),
+- dodawać do list: ulubione, ograne, ukończone,
+- usuwać gry z własnej kolekcji,
+- po kliknięciu w obrazek gry w Twojej kolekcji jest wyświetlany szczegółowy widok gry w którym możesz znaleźć szczegółowe informacje o niej,
+- jesteś informowany za pomocą okienka o swoich poczynaniach np dodawniu gry do listy ulubionych,
+- dodatkowa informacja w postaci wyświetlania badga NEW gdy na liście pojawi się nowa gra,
+- przy każdej liście gier jest informacja o ilość gier jaką zawiera,
 
-### `npm run build`
+* startujesz z grami ważnymi dla autora :)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Spodziewane poprawki przed ukończeniem studiów:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- stylowanie,
+- ewetualne poprawki zgłoszone po code review.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Wykorzystane biblioteki i technologie:
 
-### `npm run eject`
+- wykorzystanie API bazy OMDB do wyszukiwania gier,
+- użycie biblioteki `reselect` do memoizywoania selektorów,
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Poprzednio zgłoszone poprawki i sposób rozwiązania problemu:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- komponent <Buttons /> usunięty, nie wykorzystuje go, był napisany an wyrost ale zrezygnowałem z niego,
+- nazwa info.js z małej litery, nie wiedziałem że ze zmianą nazwy mogą być takie problematyczne i nie zauważyłem że na GH pozostała mała litera.Zmieniona nazwa komponentu na bardziej trafną,
+- sugestia dot. zmiennej "fire fetch" - pobieranie danych całkowicie przepisane na nowo,
+- API KEY - przepraszam, nie doczytałem że zmienne środowiskowe przy pobieraniu GH z nie przeżyją (jak mają przeżyć skoro są w gitignore), wiedziałem że przy buildzie przeżyją. Problem poprawiony, opisany w punkcie `Aby uruchomić projekt`
+- zakomentowany kod usunięty,
+- zmienne utworzone zgodnie z sugestią i przeniesionen do foldera `constants`, przy okazji dodałem jeszcze kilka,
+- projekt dancyh zmieniony zgodnie z sugestią co zaowocowało poznaniem biblioteki `reselect` ponieważ jeden z selektorów wykorzystujący .filter rzucał uwagami, z reselectem działa pysznie,
+- warunki HOT/LAME są poprawione, a moje założenie jest takie że rezultat >= 5 to lista HOT, rezultat < 0 to lista LAME,
+- zgodnie z sugestią funkcja przyporządkowująca gry do poszczególnych list hot/lame/favourite/played/finished jest uruchamiana przed wyświetleniem komponentów
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Dalszy, planowany rozwój aplikacji (po studiach):
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- wyłapanie i poprawa "warninga", który pojawia się bardzo rzadko (o ile po użycie biblioteki reselcta w ogóle jeszcze występuje) a mówi o nie możliwości jednoczesnego pownego renderu dwóch komponentów (prawdopodobnie dotyczy Lists kiedy pojawiają się na niej badge)
+- poprawa wyświetlania badgy NEW, sytuacja w tej chwili wygląda tak że jeśli 2 gry trafią na listę HOT, a potem jedna z nich wypadnie z tej listy badge znika mimo że pozstała na niej jedna "nowa" gra, prawdopodbnie trzeba dodawać do badga informacje o id gry jakie "generują" badge i przy wypadaniu gier z listy usuwać to id, wyświetlenie danej listy wyczyśći wszystkei id'ki z danej listy i usunie wszystkie badge,
+- możliwość tworzenia customowych list przez użytkownika np atari, kolekcja Uncharted, bijatyki itp.,
+- przepisanie store z użyciem configureStore i slice'ów,
+- dodanie zakładki o autorze z którtkim opisem i linkami do GH, LI i mailem,
+- zapisywanie rezultatu ocen gry (likes, downs) w ogólnym stanie tak aby ocenianie było aktualizowane globalnie dla wszystkich uruchomionych instancji aplikacji,
+- ograniczenie like/down do jednego głosu dla danej gry,
+- zapisywanie gier do localStorage lub bazy danych,
+- dodawanie informacji lub obrazków do gier w Twojej kolekcji,
+- wyświetlanie więcej niż 10 wyników z zapytania do bazy OMDB.
