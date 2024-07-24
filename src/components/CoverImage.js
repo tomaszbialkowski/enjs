@@ -12,7 +12,7 @@ export default function CoverImage({ src, title, size }) {
     } else {
       setPath(`/img/covers/${title}.jpg`);
     }
-  }, [src]);
+  }, [src, title]);
 
   const handleImageError = () => {
     setPath(IMG_PLACEHOLDER);
