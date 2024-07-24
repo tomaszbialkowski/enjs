@@ -52,7 +52,7 @@ export default function SearchResults() {
     if (query) {
       fetchData(query);
     }
-  }, [location.search]);
+  }, [location.search, query]);
 
   function handleClick(game) {
     if (!allGames.some((g) => g.id === game.id)) {
