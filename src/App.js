@@ -17,7 +17,7 @@ import Lists from "./components/Lists";
 import Footer from "./components/Footer";
 
 function App() {
-  const modalInfo = useSelector((state) => state.info);
+  // const modalInfo = useSelector((state) => state.info);
   const location = useLocation();
 
   return (
