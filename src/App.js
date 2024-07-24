@@ -41,7 +41,7 @@ function App() {
         <Lists path={location.pathname} />
         <main className="container__main--gameslist">
           {/* {modalInfo.show && <ModalInfo text={modalInfo.text} />} */}
-          <RouterConfig />
+          {/* <RouterConfig /> */}
         </main>
       </div>
       <Footer />
