@@ -80,7 +80,7 @@ export default function SearchResults() {
             <Badge text={`${data.length}`} variant="textLabel" />
             {data.length === 1 ? " game:" : " games:"}
           </h3>
-          <div className="line--thin">&nbsp;</div>
+          {/* <div className="line--thin">&nbsp;</div> */}
           {data.length === 0 ? (
             <p>No results found for query: {query}</p>
           ) : (

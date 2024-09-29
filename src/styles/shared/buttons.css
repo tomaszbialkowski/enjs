@@ -12,6 +12,16 @@
   transition: all 0.1s;
 }
 
+.searchWraper .btn_icon {
+  width: var(--space_xxl);
+  height: var(--space_xxl);
+  margin-right: 8px;
+}
+
+.btn_icon--search {
+  font-size: 16px;
+}
+
 .btn_icon--listHandlers,
 .btn_icon--back {
   border: 2px solid var(--gray-300);
@@ -65,16 +75,16 @@
 
 .btn_icon--info,
 .btn_icon--author {
-  width: var(--space_xxl);
-  height: var(--space_xxl);
-  font-size: 1.1rem;
+  width: var(--space_xl);
+  height: var(--space_xl);
+  font-size: 1rem;
   margin-left: var(--space_xs);
 }
 
 .btn_icon--info:hover,
 .btn_icon--author:hover {
   color: var(--blue);
-  font-size: 1.3rem;
+  font-size: 1.15rem;
 }
 
 .btn_icon.votes {

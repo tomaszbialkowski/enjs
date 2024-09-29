@@ -29,6 +29,7 @@
   padding-top: var(--space_sm);
   font-size: 1.2rem;
   font-weight: 400;
+  text-wrap: balance;
 }
 
 .imageWrapper {

@@ -1,0 +1,20 @@
+:root {
+  --black: #332e32;
+  --gray-700: #534d53;
+  --gray-500: #938f93;
+  --gray-300: #b3b0b3;
+  --gray-200: #eae7ea;
+  --gray-100: #f3f2f3;
+  --blue: #458bed;
+  --green: #00bf63;
+  --yellow: #ffe92d;
+  --orange: #fb9e2f;
+  --red: #e72729;
+  --space_xs: 4px;
+  --space_sm: 8px;
+  --space_md: 16px;
+  --space_lg: 24px;
+  --space_xl: 32px;
+  --space_xxl: 40px;
+  --font: Inter, sans-serif;
+}

@@ -20,7 +20,7 @@ export default function Lists() {
               : allGames.filter((game) => game[`is${list}`]).length;
 
           return (
-            <li key={list} className="list">
+            <li key={list} className="list-name">
               <NavLink
                 to={list === ListLabel.ALL ? "/" : `/${list.toLowerCase()}`}
                 className="list-information"

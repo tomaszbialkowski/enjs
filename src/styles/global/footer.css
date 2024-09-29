@@ -1,0 +1,26 @@
+.container__footer {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 16px;
+  position: fixed;
+  width: 100%;
+  padding: 16px 0;
+  bottom: 0;
+  background-color: rgba(243, 242, 243, 0.5);
+  backdrop-filter: blur(4px);
+  border-top: 1px solid rgba(51, 46, 50, 0.1);
+  font-size: 0.9rem;
+  z-index: 100;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.container__footer p {
+  padding: 0;
+  margin: 0;
+  letter-spacing: -0.5px;
+  color: var(--black);
+  font-weight: 500;
+}

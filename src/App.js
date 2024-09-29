@@ -1,7 +1,14 @@
-import "./styles/App.css";
+import "./styles/global/system.css";
+import "./styles/global/main.css";
+// import "./styles/global/App.css";
+import "./styles/global/footer.css";
 import "./styles/shared/buttons.css";
 import "./styles/shared/badges.css";
-import "./styles/game_details.css";
+import "./styles/global/game_details.css";
+import "./styles/global/media-max_767.css";
+import "./styles/global/media-min_768.css";
+import "./styles/global/media-min_1024.css";
+import "./styles/global/layout.css";
 
 import RouterConfig from "./router/RouterConfig";
 import { useSelector } from "react-redux";

@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+  .searchWraper {
+    /* background-color: #0dc1ee; */
+  }
+  .container__main--gameslist {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 24px;
+  }
+  .container__main--gameslist ul {
+    width: 100%;
+  }
+  .container__main--gameslist li {
+    display: inline-block;
+    margin-right: 24px;
+  }
+}

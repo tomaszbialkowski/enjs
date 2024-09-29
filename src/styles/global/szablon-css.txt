@@ -1,0 +1,21 @@
+styles/
+│
+├── global/
+│   ├── base.css         // Podstawowe, globalne style (np. resetowanie stylów, typografia)
+│   ├── layout.css       // Style layoutu globalnego (np. grid, flexbox)
+│   ├── typography.css   // Globalne style typograficzne
+│   ├── colors.css       // Definicje kolorów globalnych
+│   ├── media-desktop.css // Style specyficzne dla komputerów
+│   └── media-mobile.css  // Style specyficzne dla urządzeń mobilnych
+│
+└── shared/
+    ├── button.css       // Styl dla komponentu Button
+    ├── card.css         // Styl dla komponentu Card
+    └── modal.css        // Styl dla komponentu Modal
+
+320px: Małe smartfony.
+480px - 576px: Średnie smartfony.
+768px: Tablety (w pionie), większe smartfony (w poziomie).
+992px - 1024px: Duże tablety, małe laptopy.
+1200px: Laptopy, małe desktopy.
+1440px i wyżej: Duże ekrany desktopowe.
