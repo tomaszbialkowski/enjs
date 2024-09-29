@@ -4,7 +4,7 @@ import { faReact } from "@fortawesome/free-brands-svg-icons";
 export default function Footer() {
   return (
     <footer className="container__footer">
-      <div>
+      <div className="icon_academy">
         <img
           src="/img/other/kozminski-logo.png"
           alt="Kozminski Logo"

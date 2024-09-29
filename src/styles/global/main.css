@@ -232,17 +232,3 @@ img {
   color: var(--gray-300);
   letter-spacing: 13px;
 }
-
-.footer_text {
-  padding: 0 24px;
-}
-
-.logo.alk {
-  filter: grayscale();
-  opacity: 0.6;
-}
-
-.icon_react {
-  font-size: 48px;
-  color: var(--gray-300);
-}
