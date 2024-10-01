@@ -9,6 +9,11 @@
     align-items: flex-start;
     padding-left: 24px;
   }
+
+  .container__main--lists .list-name {
+    font-size: 1rem;
+  }
+
   .container__main--gameslist ul {
     width: 100%;
   }
