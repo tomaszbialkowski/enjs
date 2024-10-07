@@ -1,6 +1,11 @@
 @media (min-width: 768px) {
   .searchWraper {
+    height: 48px;
     /* background-color: #0dc1ee; */
+  }
+
+  .search-input {
+    font-size: 16px;
   }
   .container__main--gameslist {
     width: 100%;
@@ -12,6 +17,10 @@
 
   .container__main--lists .list-name {
     font-size: 1rem;
+  }
+
+  .container__main--lists {
+    width: 100%;
   }
 
   .container__main--gameslist ul {
