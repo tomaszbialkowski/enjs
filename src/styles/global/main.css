@@ -165,10 +165,6 @@ img {
   align-items: center;
 }
 
-.container__main--gameslist li:last-of-type {
-  padding-bottom: 180px;
-}
-
 .container_main--game {
   border-radius: 32px;
   border: 2px solid var(--gray-200);

@@ -30,4 +30,7 @@
     display: inline-block;
     margin-right: 24px;
   }
+  .container__main--gameslist li:last-of-type {
+    padding-bottom: 180px;
+  }
 }

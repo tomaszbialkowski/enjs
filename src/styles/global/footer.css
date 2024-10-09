@@ -1,12 +1,12 @@
 .container__footer {
   display: flex;
-  position: fixed;
+  /* position: fixed; */
   justify-items: center;
   align-items: center;
   text-align: center;
   justify-content: center;
   width: 100%;
-  bottom: 0;
+  /* bottom: 0; */
   background-color: rgba(243, 242, 243, 0.5);
   backdrop-filter: blur(4px);
   border-top: 1px solid rgba(51, 46, 50, 0.1);
@@ -35,6 +35,8 @@
 
 @media screen and (min-width: 768px) {
   .container__footer {
+    position: fixed;
+    bottom: 0;
     padding: 16px 0;
   }
   .footer_text {
