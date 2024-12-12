@@ -47,7 +47,7 @@ export default function GameDetails() {
       }
     }
     fetchGame();
-  });
+  }, [id]);
 
   const renderDetail = (label, value) => {
     if (value === "N/A") return null;
