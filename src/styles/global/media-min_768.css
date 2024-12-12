@@ -11,7 +11,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     padding-left: 24px;
   }
 
@@ -31,6 +31,6 @@
     margin-right: 24px;
   }
   .container__main--gameslist li:last-of-type {
-    padding-bottom: 180px;
+    padding-bottom: 110px;
   }
 }

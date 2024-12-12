@@ -77,7 +77,7 @@
     max-width: 80%;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     padding-left: var(--space_xl);
   }
 
