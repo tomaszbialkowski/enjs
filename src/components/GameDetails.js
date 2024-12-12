@@ -85,15 +85,6 @@ export default function GameDetails() {
       {renderDetail("Starring", details.actors)}
       {renderDetail("Awards", details.awards)}
       {renderDetail("Rating", details.rating)}
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
-      <div>&nbsp;</div>
     </div>
   );
 }

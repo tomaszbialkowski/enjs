@@ -1,7 +1,3 @@
-.container_games {
-  /* padding-top: var(--space_md); */
-}
-
 .game_title {
   border-bottom: 3px solid var(--gray-300);
   padding: 0;

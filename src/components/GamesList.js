@@ -27,19 +27,18 @@ export default function GamesList() {
     : [...allGames].reverse();
 
   useEffect(() => {
-    if (badges && badges.has(listNameWithUpperCase)) {
-      dispatch({
-        type: "HIDE_BADGE_NEW",
-        listName: listNameWithUpperCase,
-      });
-    }
+    if (!badges) return;
 
-    if (badges && badges.has(ListLabel.ALL)) {
-      dispatch({
-        type: "HIDE_BADGE_NEW",
-        listName: ListLabel.ALL,
-      });
-    }
+    const listNamesToHide = [listNameWithUpperCase, ListLabel.ALL];
+
+    listNamesToHide.forEach((listName) => {
+      if (badges.has(listName)) {
+        dispatch({
+          type: "HIDE_BADGE_NEW",
+          listName,
+        });
+      }
+    });
   }, [badges, dispatch, listNameWithUpperCase]);
 
   useEffect(() => {
