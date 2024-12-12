@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useCallback } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import useModalActions from "../hooks/useModalActions";
@@ -26,6 +26,20 @@ export default function Game({ id }) {
   const { showModalInfo } = useModalActions();
   const result = upVotes - downVotes;
   const { isFavourite, isPlayed, isFinished, isHot, isLame } = game;
+
+  const addToHotList = useCallback(() => {
+    dispatch({
+      type: "ADD_TO_HOT",
+      payload: id,
+    });
+  }, [dispatch, id]);
+
+  const addToLameList = useCallback(() => {
+    dispatch({
+      type: "ADD_TO_LAME",
+      payload: id,
+    });
+  }, [dispatch, id]);
 
   useEffect(() => {
     if (result >= 5 && !isHot) {
@@ -75,20 +89,6 @@ export default function Game({ id }) {
       removeFromLameList();
     }
     if (isLame) hideBadgeNew(ListLabel.LAME);
-  }
-
-  function addToHotList() {
-    dispatch({
-      type: "ADD_TO_HOT",
-      payload: id,
-    });
-  }
-
-  function addToLameList() {
-    dispatch({
-      type: "ADD_TO_LAME",
-      payload: id,
-    });
   }
 
   function removeFromHotList() {
